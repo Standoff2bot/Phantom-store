@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STACK — Software Catalog</title>
+<meta name="description" content="Original software and free forks, priced plainly and ready to run.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">STACK<span class="dot">.</span></a>
+    <nav class="site-nav">
+      <a href="#catalog">Catalog</a>
+      <a href="#about">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap">
+    <p class="manifest-line" id="manifest-line">catalog — loading…</p>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="hero-eyebrow">$ browse --catalog</p>
+    <h1 class="hero-title">Software, shipped straight from the source.</h1>
+    <p class="hero-sub">Original tools built in-house, alongside free forks of programs worth keeping alive. Everything below is maintained, priced plainly, and ready to run.</p>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="wrap catalog-controls">
+      <div class="filter-tabs" role="tablist" aria-label="Filter catalog">
+        <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" data-filter="original" role="tab" aria-selected="false">Originals</button>
+        <button class="tab" data-filter="fork" role="tab" aria-selected="false">Free forks</button>
+      </div>
+      <div class="search-field">
+        <label for="search" class="sr-only">Search catalog</label>
+        <input type="search" id="search" placeholder="Search the catalog…" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>Nothing matches that search. Try a different name, or clear the filter.</p>
+    </div>
+  </section>
+
+  <section class="about wrap" id="about">
+    <h2>How this works</h2>
+    <ol class="how-list">
+      <li><span class="how-index">01</span><span>Pick a package. Each one lists what it does, its license, and its price up front — no surprises at checkout.</span></li>
+      <li><span class="how-index">02</span><span>Pay or download. Paid tools open a secure, hosted checkout. Free forks link straight to the source.</span></li>
+      <li><span class="how-index">03</span><span>You're in. Delivery and any license key arrive by email from the checkout provider — nothing is handled by this page.</span></li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-inner">
+    <p>Questions before you buy? <a id="contact-link" href="#">hello@example.com</a></p>
+    <p class="fine-print">© <span id="year"></span> STACK. Payments are handled entirely by the checkout provider — nothing is stored on this site.</p>
+  </div>
+</footer>
+
+<script src="js/products.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
