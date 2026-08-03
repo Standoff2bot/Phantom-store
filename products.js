@@ -117,5 +117,6 @@ const PRODUCTS = [
     action: "buy",
     link: "https://buy.stripe.com/replace-with-your-payment-link"
   }
-];window.SITE_CONFIG = SITE_CONFIG;
+];
+window.SITE_CONFIG = SITE_CONFIG;
 window.PRODUCTS = PRODUCTS;
